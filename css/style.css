@@ -87,7 +87,7 @@ nav{
 .gamesBox h1{
     margin: 8vh;
     font-size: 9vh;
-    color: #543310;
+    color: #3a230b;
     border-bottom:2px solid #543310;
 }
 .gamesBox .games{
@@ -168,6 +168,17 @@ nav{
     .intro span{
         font-size: 8vh;
     }
+
+    .gamesBox .games div{    
+        padding: 3vh;
+        width: 220px;
+        height: 300px;
+    }
+     
+    .gamesBox .games div img{
+        height: 22vh;
+    }
+
 }
 
 @media (max-width:400px){
