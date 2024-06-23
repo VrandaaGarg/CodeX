@@ -9,6 +9,8 @@ body{
     background-color: #F8F4E1;
 }
 
+/* home */
+
 .mainContainer{
     background-image: url('../images/baclgroundimage.jpg');
     background-repeat: no-repeat;
@@ -78,14 +80,17 @@ nav{
     font-size: 12vh;
 }
 
+/* gameBox */
+
 .gamesBox{
     display: block;
     text-align: center;
-    height: 88vh;
+    height:max-content;
+    margin: 15vh;
 }
 
 .gamesBox h1{
-    margin: 8vh;
+    margin-bottom: 6vh;
     font-size: 9vh;
     color: #3a230b;
     border-bottom:2px solid #543310;
@@ -131,6 +136,78 @@ nav{
     transform: scale(1.2);
 }
 
+/* courses */
+
+.courses{
+    height: max-content;
+    text-align: center;
+    color: #F8F4E1;
+    background-color: #543310;
+    padding: 6vh;
+    font-size: 4.5vh;
+}
+.courses h1{
+    border-bottom:2px solid #F8F4E1;
+}
+
+
+.courses .courseList{
+    display: flex;
+    justify-content: center;
+    padding: 4vh;
+    flex-wrap: wrap;
+    margin: 5vh;
+    border-radius: 50%;
+    gap:8vh;
+}
+
+.courses .courseList button{
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: #281908 3px 3px 5px;
+}
+.courses .courseList button img{
+    height: 250px;
+    border-radius: 50%;
+    outline: 2px solid #F8F4E1;
+    
+}
+.courses .courseList button:hover{
+    transform: scale(1.1);
+}
+
+.courses .notes{
+    background-color: #876e54;
+    border-radius: 30px;
+    padding: 4vh;
+    color: #281908;
+    margin: 4vh;
+}
+
+.courses .notes h2{
+    margin: 3vh;
+    border-bottom:2px solid #3a230b;
+}
+
+.courses .pdf{
+    display: flex;
+    gap: 4vh;
+    margin: 4vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses .pdf img{
+    height: 200px;
+    border-radius: 10px;
+    border: 1.5px solid #281908;
+    box-shadow: #281908 4px 6px 5px;
+}
+
+.hide{
+    display: none;
+}
+
 @media (max-width:900px){
     .mainContainer nav .navlist{
         justify-content: center;
@@ -169,6 +246,9 @@ nav{
         font-size: 8vh;
     }
 
+    .gamesBox{
+        margin:5vh;
+    }
     .gamesBox .games div{    
         padding: 3vh 0 0 0;
         width: 220px;
@@ -179,6 +259,37 @@ nav{
         height: 22vh;
     }
 
+    /* courses */
+
+    .courses h1{
+        font-size: 5vh;
+    }
+
+    .courses .courseList{
+        padding: 3vh 0 0 0;
+ 
+    }
+    .courses .courseList button img{
+        height: 100px;
+    }
+
+    .courses .notes, .courses{
+        padding: 2vh;
+        margin: 2vh;
+        font-size: 3vh;
+    }
+    
+    .courses .notes h2{
+    margin: 1vh;
+    font-size:4vh;
+    }
+
+    .courses .pdf{
+        gap: 2vh;
+    }
+    .courses .pdf img{
+        height: 80px;
+    }
 }
 
 @media (max-width:400px){
@@ -203,6 +314,14 @@ nav{
     }
     .gamesBox div p{
         font-size: 2.5vh;
+    }
+
+    .courses h1{
+        font-size: 4vh;
+    }
+
+    .courses .pdf img{
+        height: 50px;
     }
 
 }
