@@ -1,0 +1,137 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 6vh;
+    background-color: #F8F4E1;
+}
+
+.mainContainer{
+    background-image: url('../images/baclgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 88vh;
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: rgba(28, 18, 8, 0.3);
+}
+
+.mainContainer nav h1{
+    color: #F8F4E1;
+    text-shadow: #543310 3px 3px 2px;
+    font-size: 6vh;
+    padding: 1vh;
+}
+.mainContainer nav .navlist {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+}
+
+.mainContainer nav .navlist li {
+    font-size: 3.6vh;
+    line-height: 9vh;
+    border-bottom:3px solid transparent;
+}
+
+.mainContainer nav .navlist li a{
+    color: #F8F4E1;
+    text-decoration: none;
+    padding: 3vh 4vh 3vh 4vh;
+    
+}
+
+.mainContainer nav .navlist li:hover{
+    background-color:rgba(175, 143, 111,0.5);
+    border-bottom:3px solid #F8F4E1;
+}
+
+.mainContainer nav .open,.close{
+    position: absolute;
+    top: 6vh;
+    right: 8vh;
+    color:#F8F4E1;
+    font-size: 5vh;
+    cursor: pointer;
+    line-height: 9vh;
+    display: none;
+}
+
+.intro{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    align-items: center;
+    padding: 17vh;
+    font-size: 8vh;
+    color: #281909;
+}
+.intro span{
+    font-weight: 900;
+    font-size: 12vh;
+}
+
+
+
+
+
+
+@media (max-width:900px){
+    .mainContainer nav .navlist{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        background-color:#281908;
+        display: none;
+    }
+
+    .mainContainer nav .open{
+        display: block;
+    }
+    .mainContainer nav .navlist li:hover{
+        transform: scale(1.2);
+        border-bottom: transparent;
+    }
+    .close{
+        display: block;
+    }
+
+    nav{
+        border-bottom:3px solid #543310;
+    }
+    .intro{
+        text-align: center;
+        font-size: 5vh;
+        padding: 3vh;
+    }
+    .intro span{
+        font-size: 8vh;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        padding: 4vh;
+    }
+    h1{
+        font-size: 4vh;
+    }
+    .mainContainer nav .open{
+        font-size: 3vh;
+        top:3.4vh;
+    }
+}
+
