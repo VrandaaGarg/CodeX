@@ -170,7 +170,7 @@ nav{
     }
 
     .gamesBox .games div{    
-        padding: 3vh;
+        padding: 3vh 0 0 0;
         width: 220px;
         height: 300px;
     }
@@ -199,7 +199,7 @@ nav{
     }
 
     .gamesBox h1,.gamesBox div i{
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .gamesBox div p{
         font-size: 2.5vh;
