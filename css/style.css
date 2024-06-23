@@ -78,10 +78,58 @@ nav{
     font-size: 12vh;
 }
 
+.gamesBox{
+    display: block;
+    text-align: center;
+    height: 88vh;
+}
 
+.gamesBox h1{
+    margin: 8vh;
+    font-size: 9vh;
+    color: #543310;
+    border-bottom:2px solid #543310;
+}
+.gamesBox .games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10vh; 
+}
 
+.gamesBox .games div{
+    background-color: #74512D;
+    text-align: center;
+    padding: 6vh;
+    cursor: pointer;
+    border: 2px solid #281908;
+    box-shadow: #4e4944 3px 3px 7px 4px;
+    border-radius: 10px;
+    font-size: 4vh;
+    color: #F8F4E1;
+}
 
+.gamesBox .games div:hover{
+    transform: scale(1.1);
+}
 
+.gamesBox .games div img{
+    height: 30vh;
+    border-radius: 50%;
+    border:3px solid #281908;
+}
+
+.gamesBox .games div i{
+    font-size: 7vh;
+    margin: 2vh;
+}
+
+.gamesBox .games div i:hover{
+    color: #281908;
+    border-radius: 50%;
+    transform: scale(1.2);
+}
 
 @media (max-width:900px){
     .mainContainer nav .navlist{
@@ -126,8 +174,13 @@ nav{
     body{
         padding: 4vh;
     }
-    h1{
+    .intro{
+        text-align: center;
         font-size: 4vh;
+        padding: 4vh;
+    }
+    .intro span{
+        font-size: 5vh;
     }
     .mainContainer nav .open{
         font-size: 3vh;
