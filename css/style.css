@@ -197,5 +197,13 @@ nav{
         font-size: 3vh;
         top:3.4vh;
     }
+
+    .gamesBox h1,.gamesBox div i{
+        font-size: 4vh;
+    }
+    .gamesBox div p{
+        font-size: 2.5vh;
+    }
+
 }
 
