@@ -438,7 +438,7 @@ nav .icons i{
     .gamesBox .games div{    
         padding: 3vh 0 0 0;
         width: 220px;
-        height: 300px;
+        height: 260px;
     }
      
     .gamesBox .games div img{
@@ -479,7 +479,7 @@ nav .icons i{
 /* bmi */
     .miniProject{
         flex-direction: column;
-        padding: 3vh;
+        padding-bottom: 4vh;
     }
 
     .bmi {
@@ -489,7 +489,7 @@ nav .icons i{
     }
 
     .background{
-        clip-path: circle(30.4% at 50% 0);
+        clip-path: circle(35.4% at 50% 0);
     }
     .miniProject .bmiImg a{
         font-size: 2vh;
