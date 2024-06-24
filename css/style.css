@@ -377,19 +377,21 @@ nav{
     }
 
     .bmi {
-        font-size: 2vh;
-        flex: 0.7;
+        font-size: 2.6vh;
+        flex: 1.1;
+        margin-top: 3vh;
     }
 
     .background{
-        clip-path: circle(20.4% at 50% 0);
+        clip-path: circle(30.4% at 50% 0);
     }
-    .miniProject .bmiImg{
+    .miniProject .bmiImg a{
         font-size: 2vh;
     }
 
     .miniProject .bmiImg img{
-        height: 230px;
+        height: 270px;
+        margin-bottom: 5vh;
     }
 
 }
