@@ -1,5 +1,3 @@
-Certainly! Here is the README without the JavaScript code section:
-
 # CodeX
 
 Welcome to **CodeX**, a website where innovation meets excellence in web development. This README provides an overview of the website's features, structure, and functionality.
