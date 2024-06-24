@@ -332,15 +332,17 @@ nav .icons i{
     margin: 7vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact .contactUs div{
     margin-bottom: 3vh;
     text-align: center;
-    height: 300px;
+    min-height: 300px;
+    max-height: fit-content;
     width: 300px;
     padding: 4vh;
-    font-size: 3.5vh;
+    font-size: 3vh;
     
 }
 
