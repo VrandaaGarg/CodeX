@@ -8,6 +8,7 @@ let js=document.querySelector(".js")
 let htmlBtn=document.querySelector(".htmlBtn");
 let jsBtn=document.querySelector(".jsBtn");
 let cssBtn=document.querySelector(".cssBtn");
+let navBtns=document.querySelectorAll(".navBtn");
 
 openBtn.addEventListener("click",()=>{
     navlist.style.display="flex"
@@ -15,6 +16,12 @@ openBtn.addEventListener("click",()=>{
 
 closeBtn.addEventListener("click",()=>{
     navlist.style.display="none";
+})
+
+navBtns.forEach(navBtn=>{
+    navBtn.addEventListener("click",()=>{
+        navlist.style.display="none";
+    })
 })
 
 

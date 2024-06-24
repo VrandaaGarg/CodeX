@@ -73,12 +73,12 @@ nav{
 
 .mainContainer nav .open,.close{
     position: absolute;
-    top: 6vh;
-    right: 8vh;
+    top:8vh;
+    right: 6vh;
     color:#F8F4E1;
     font-size: 5vh;
     cursor: pointer;
-    line-height: 9vh;
+    line-height: 6vh;
     display: none;
 }
 
@@ -398,6 +398,11 @@ nav .icons i{
 
     .mainContainer nav .open{
         display: block;
+        position: fixed;
+        background-color: rgba(84, 51, 16,0.6);
+        border-radius: 7px;
+        width:7vh;
+        text-align: center;
     }
     .mainContainer nav .navlist li:hover{
         transform: scale(1.2);
@@ -521,7 +526,8 @@ nav .icons i{
     }
     .mainContainer nav .open{
         font-size: 3vh;
-        top:3.4vh;
+        top:6vh;
+        right: 4vh;
     }
 
     .gamesBox h1,.gamesBox div i{
