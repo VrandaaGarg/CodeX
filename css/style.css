@@ -86,6 +86,7 @@ nav .icons{
     padding: 4vh;
     font-size: 7vh;
     cursor: pointer;
+    display: none;
 }
 .fa-envelope:hover{color:rgb(255, 128, 0) }
 .fa-telegram:hover{color:rgb(240, 117, 138) }
@@ -95,8 +96,6 @@ nav .icons{
 nav .icons i{
     color: #F8F4E1;
 }
-
-
 
 .intro{
     width: 100%;
@@ -405,6 +404,9 @@ nav .icons i{
         border-bottom: transparent;
     }
     .close{
+        display: block;
+    }
+    nav .icons{
         display: block;
     }
 
