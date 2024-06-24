@@ -436,9 +436,9 @@ nav .icons i{
         margin:5vh;
     }
     .gamesBox .games div{    
-        padding: 3vh 0 0 0;
+        padding: 3vh 0 3vh 0;
         width: 220px;
-        height: 260px;
+        height: fit-content;
     }
      
     .gamesBox .games div img{
