@@ -20,10 +20,11 @@ closeBtn.addEventListener("click",()=>{
 
 navBtns.forEach(navBtn=>{
     navBtn.addEventListener("click",()=>{
-        navlist.style.display="none";
+        if (window.innerWidth <= 900) {
+            navlist.style.display = "none";
+        }
     })
 })
-
 
 htmlBtn.addEventListener("click",()=>{
     if(html.classList.contains("hide")){
