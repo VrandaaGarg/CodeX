@@ -88,10 +88,10 @@ nav .icons{
     cursor: pointer;
     display: none;
 }
-.fa-envelope:hover{color:rgb(255, 128, 0) }
-.fa-telegram:hover{color:rgb(240, 117, 138) }
-.fa-instagram:hover{color:rgb(0, 145, 255)}
-.fa-github:hover{color:green }
+nav .icons .fa-envelope:hover{color:rgb(255, 128, 0) }
+nav .icons .fa-telegram:hover{color:rgb(240, 117, 138) }
+nav .icons .fa-instagram:hover{color:rgb(0, 145, 255)}
+nav .icons .fa-github:hover{color:green }
 
 nav .icons i{
     color: #F8F4E1;
