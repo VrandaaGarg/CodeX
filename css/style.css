@@ -438,7 +438,7 @@ nav .icons i{
     .gamesBox .games div{    
         padding: 3vh 0 3vh 0;
         width: 220px;
-        height: fit-content;
+        height: max-content;
     }
      
     .gamesBox .games div img{
@@ -518,7 +518,7 @@ nav .icons i{
 
 }
 
-@media (max-width:400px){
+@media (max-width:450px){
     body{
         padding: 4vh;
     }
