@@ -82,6 +82,22 @@ nav{
     display: none;
 }
 
+nav .icons{
+    padding: 4vh;
+    font-size: 7vh;
+    cursor: pointer;
+}
+.fa-envelope:hover{color:rgb(255, 128, 0) }
+.fa-telegram:hover{color:rgb(240, 117, 138) }
+.fa-instagram:hover{color:rgb(0, 145, 255)}
+.fa-github:hover{color:green }
+
+nav .icons i{
+    color: #F8F4E1;
+}
+
+
+
 .intro{
     width: 100%;
     height: 79vh;
@@ -233,7 +249,7 @@ nav{
     z-index: -1;
     background-image: linear-gradient(to right ,#74512D, #281908);
     clip-path: circle(50% at 0 50%);
-    transition: clip-path 3s ease;
+    transition: clip-path 3s ease ;
 }
 
 .miniProject{
@@ -278,6 +294,83 @@ nav{
 
 .bmiImg a{
    color: #3a230b;
+}
+
+.aboutSection{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    user-select: none;
+    height: max-content;
+}
+
+.aboutSection h1{
+    font-size: 8vh;
+    color: #281909;
+    border-bottom:2px solid #543310;
+}
+.aboutSection p{
+    color: #3a230b;
+    padding: 3vh;
+    line-height: 7vh;
+    font-size: 3.5vh;
+}
+
+/* contact us */
+
+.contact{
+    color: #F8F4E1;
+    text-align: center;
+    height: max-content;
+    padding: 7vh;
+    background-color: #543310;
+}
+
+.contact .contactUs{
+    margin: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contactUs div{
+    margin-bottom: 3vh;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 4vh;
+    font-size: 3.5vh;
+    
+}
+
+.contact .insta,.tele{
+    background-color: #876e54;
+    color: #281909
+}
+
+.contact .mail{
+    background-color: #281909;
+    color: #876e54;
+}
+
+.contact .contactUs div i{
+    font-size: 12vh;
+    margin-bottom: 6vh;
+}
+
+.contact .contactUs div i:hover{
+    transform: scale(1.2);
+}
+.contact .contactUs div a{
+    text-decoration: none;
+    color: inherit ;
+}
+
+.contact .contactUs div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (max-width:900px){
@@ -392,6 +485,22 @@ nav{
     .miniProject .bmiImg img{
         height: 270px;
         margin-bottom: 5vh;
+    }
+
+    /* about section */
+
+    .aboutSection h1{
+        font-size:4.5vh;
+    }
+    .aboutSection p{
+        font-size: 2vh;
+        padding: 1vh;
+        line-height: 4vh;
+    }
+
+    /* contact */
+    .contact{
+        display: none;
     }
 
 }
