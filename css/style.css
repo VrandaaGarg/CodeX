@@ -80,6 +80,7 @@ nav{
     cursor: pointer;
     line-height: 6vh;
     display: none;
+    z-index: 7;
 }
 
 nav .icons{
@@ -338,12 +339,13 @@ nav .icons i{
 .contact .contactUs div{
     margin-bottom: 3vh;
     text-align: center;
+    align-content: center;
+    width: 300px;
     min-height: 300px;
     max-height: fit-content;
-    min-width: 300px;
-    max-width: 500px;
     padding: 4vh;
     font-size: 3vh;
+    box-sizing:content-box;
     
 }
 
