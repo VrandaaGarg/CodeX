@@ -7,8 +7,24 @@
 body{
     padding: 6vh;
     background-color: #F8F4E1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.fixedIcons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+    right: 3px;
+    bottom: 40px;
+}
+
+.fixedIcons div img{
+    height: 10vh;
+    background-color: #F8F4E1;
+    border-radius: 15px;
+    cursor: pointer;
+}
 /* home */
 
 .mainContainer{
@@ -208,7 +224,72 @@ nav{
     display: none;
 }
 
+/* Mini project */
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to right ,#74512D, #281908);
+    clip-path: circle(50% at 0 50%);
+    transition: clip-path 3s ease;
+}
+
+.miniProject{
+    display: flex;
+    flex-direction: row;
+    margin: 7vh 0 7vh 0;
+    height: 93vh;
+    text-align: center;
+    position: relative;
+}
+
+.miniProject:hover .background{
+    clip-path: circle(150% at 0 0);
+}
+
+.bmi{
+    flex: 2;
+    align-self: center;
+    color: #F8F4E1;
+    font-size: 6vh;
+}
+
+.bmiImg{
+    flex:3;
+    align-self: center;
+    text-shadow: 
+    -1px -1px 0 #F8F4E1, /* Top-left shadow */
+    1px -1px 0 #F8F4E1,  /* Top-right shadow */
+    -1px 1px 0 #F8F4E1,  /* Bottom-left shadow */
+    1px 1px 0 #F8F4E1; 
+}
+
+.miniProject .bmiImg img{
+    height: 60vh;
+    text-align: center;
+    box-shadow: rgba(248, 244, 225,0.7) 5px 5px 15px 10px;
+    margin: 3vh;
+    border: 2px solid #281908;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bmiImg a{
+   color: #3a230b;
+}
+
 @media (max-width:900px){
+.fixedIcons{
+    gap: 2vh;
+}
+
+    .fixedIcons div img{
+        height: 35px;
+        border-radius: 10px;
+    }
+
     .mainContainer nav .navlist{
         justify-content: center;
         align-items: center;
@@ -290,6 +371,27 @@ nav{
     .courses .pdf img{
         height: 80px;
     }
+/* bmi */
+    .miniProject{
+        flex-direction: column;
+    }
+
+    .bmi {
+        font-size: 2vh;
+        flex: 0.7;
+    }
+
+    .background{
+        clip-path: circle(20.4% at 50% 0);
+    }
+    .miniProject .bmiImg{
+        font-size: 2vh;
+    }
+
+    .miniProject .bmiImg img{
+        height: 230px;
+    }
+
 }
 
 @media (max-width:400px){
